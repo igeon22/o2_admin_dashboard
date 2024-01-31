@@ -1,3 +1,298 @@
-body{
-    background-color: red;
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Regular.ttf");
+}
+
+html,body{
+    margin: 0;
+    font-family: "Roboto";
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.lg h1{
+    margin: 0;
+}
+
+.lg{
+    margin-bottom: 20px;
+}
+
+.sidebar{
+    grid-column: 1;
+    min-height: 100vh;
+    background-color: #0284c7;
+    color:white;
+    padding: 20px;
+}
+
+.side-element{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+
+.side-element img{
+    position: relative;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.side-element p{
+    font-weight: bold;
+}
+#dash-logo{
+    width: 30px;
+    height: 30px;
+}
+
+.no-top{
+    top: 0;
+}
+
+#profile{
+    height: 30px;
+}
+
+#message{
+    top: 0;
+}
+
+#communities{
+    margin-bottom: 40px;
+}
+
+.top-head form{
+    display: flex;
+    align-items: center;
+}
+
+.notif>img{
+    width: 30px;
+    height: 30px;
+}
+
+.notif{
+    background-color: transparent;
+    border: none;
+}
+
+.top-head input{
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    flex: 1;
+    max-width: 550px;
+    background-color: #cbd5e1;
+}
+
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.name{
+    font-weight: bold;
+}
+
+.down-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    
+}
+
+.main-part{
+    grid-column: 2;
+
+}
+
+.top-head{
+    flex: auto;
+}
+
+
+.big{
+    width: 60px;
+    height: 60px;
+}
+
+.hi{
+    font-weight: bold;
+    display:grid;
+    grid-auto-flow: row;
+    gap: 3px;
+
+}
+
+.hi:nth-child(2){
+    font-size: 1.1em;
+}
+
+.hd-btn{
+    background-color: #0284c7;
+    color: white;
+    border-radius: 16px;
+    padding: 10px 25px;
+    border: none;
+}
+
+.head-2{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-hd-cont{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.hi{
+    flex: 1;
+}
+
+.hi p{
+   margin: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    justify-content: center;
+    border-bottom: 4px solid black ;
+    gap: 20px;
+}
+
+.main{
+    background: #e2e8f0;
+    padding: 20px 15px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 25px;
+}
+
+.projects{
+    grid-column: 1;
+}
+
+.project-block{
+    height: 220px;
+    border-left: 7px solid #facc15;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #cfd5dd;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.project-block p{
+    margin: 2px;
+}
+
+.project-act{
+    display: flex;
+    justify-content: flex-end;
+    align-self: end;
+    flex: 1;
+    align-items: flex-end;
+}
+
+.project-title{
+    font-weight: 900;
+    font-size: 1.1em;
+}
+
+.project-desc{
+    text-wrap: wrap;
+    color: #64748b;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(305px,1fr));
+    gap: 25px;
+}
+
+.announcements-cont,.trending-cont{
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #cbd5e1;
+}
+
+.a-title{
+    font-weight: bold;
+    margin: 0;
+}
+
+.a-text{
+    font-size: 0.85em;
+    margin-top: 3px;
+    color: #64748b;
+}
+
+.announcements-cont div{
+    border-bottom: 2px solid #64748b;
+    padding: 10px 0;
+}
+
+.announcements-cont div:nth-child(3){
+    border-bottom: none;
+}
+
+
+
+.trend-block{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.trend-block img{
+    width: 50px;
+    height: 50px;
+}
+
+.trending-cont{
+    gap: 30px;
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.txt p{
+    margin: 0;
+}
+
+.mod{
+    color: #64748b;
 }
